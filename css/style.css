@@ -67,39 +67,55 @@ nav a {
 main {
     margin-bottom: 10px;
     padding-bottom: 15px;
-
-    /* regole debug */
-    background-color: rgb(0, 132, 255);
-}
-
-section, aside {
-    /* regole debug */
-    background-color: rgb(150, 182, 212);
+    color: grey;
+    font-size: 12px;
 }
 
 #intestazione-corpo-principale {
-    width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
 
-    /* regole debug */
-    height: 50px;
+#intestazione-corpo-principale > h2 {
+    color: black;
+    font-size: 28px;
+}
+
+#contenuti-principali h6 {
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 
 aside {
-    width: 15%;
+    width: 20%;
     float: left;
+}
 
-    /* regole debug */
-    height: 300px;
+.main-illustrazione {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.main-illustrazione.sinistra {
+    background-image: url(../img/img-1.jpg);
+}
+
+.main-illustrazione.destra {
+    background-image: url(../img/img-3.jpg);
+}
+
+.main-illustrazione.centrale {
+    background-image: url(../img/banner-2.jpg);
 }
 
 #corpo-principale {
-    width: 66%;
+    width: 56%;
     margin: 0 2%;
     float: left;
-
-    /* regole debug */
-    height: 300px;
 }
 
 .clearfix::after {
@@ -110,8 +126,7 @@ aside {
 
 footer {
     text-align: center;
-    /* regole debug */
-    background-color: rgb(98, 32, 151);
+    margin-bottom: 20px;
 }
 
 footer > div::after {
