@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+#contenitore {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* CSS relativo all'header con logo e menu principale */
+
+#logo {
+    height: 70px;
+    border-right: 1px solid lightgrey;
+    padding-right: 20px;
+    margin: 10px 0 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+}
+
+/* CSS relativo al jumbotron con immagine di sfondo e testo al suo interno */
+
+#jumbotron {
+    margin: 30px 0;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.trasparenza {
+    background-color:rgba(0, 0, 0, 0.2);
+    height: 100%;
+    border-radius: 10px;
+}
+
+#jumbotron-testo {
+    padding: 270px 0 0 40px;
+    color: white;
+}
+
+#jumbotron-testo > h2 {
+    font-weight: 400;
+}
+
+
+/* CSS relativo al main e a tutte le sue parti */
+
+main {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+
+    /* regole debug */
+    background-color: rgb(0, 132, 255);
+}
+
+section, aside {
+    /* regole debug */
+    background-color: rgb(150, 182, 212);
+}
+
+#intestazione-corpo-principale {
+    width: 100%;
+    margin-bottom: 15px;
+
+    /* regole debug */
+    height: 50px;
+}
+
+aside {
+    width: 15%;
+    float: left;
+
+    /* regole debug */
+    height: 300px;
+}
+
+#corpo-principale {
+    width: 66%;
+    margin: 0 2%;
+    float: left;
+
+    /* regole debug */
+    height: 300px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    /* regole debug */
+    background-color: rgb(98, 32, 151);
+}
+
+footer > div::after {
+    content: "\2665";
+    color: red;
+    font-size: 20px;
+    margin-left: 5px;
+}
