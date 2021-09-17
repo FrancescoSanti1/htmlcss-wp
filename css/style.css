@@ -16,6 +16,18 @@ body {
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.trasparenza {
+    background-color:rgba(0, 0, 0, 0.2);
+    height: 100%;
+    border-radius: 10px;
+}
+
 /* CSS relativo all'header con logo e menu principale */
 
 #logo {
@@ -43,12 +55,6 @@ nav a {
     background-size: cover;
     background-position: center;
     height: 400px;
-    border-radius: 10px;
-}
-
-.trasparenza {
-    background-color:rgba(0, 0, 0, 0.2);
-    height: 100%;
     border-radius: 10px;
 }
 
@@ -80,16 +86,24 @@ main {
     font-size: 28px;
 }
 
+/* CSS relativo alle tre colonne del main */
+
+aside {
+    width: 20%;
+    float: left;
+}
+
+#corpo-principale {
+    width: 56%;
+    margin: 0 2%;
+    float: left;
+}
+
 #contenuti-principali h6 {
     color: black;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 5px;
-}
-
-aside {
-    width: 20%;
-    float: left;
 }
 
 .main-illustrazione {
@@ -112,17 +126,8 @@ aside {
     background-image: url(../img/banner-2.jpg);
 }
 
-#corpo-principale {
-    width: 56%;
-    margin: 0 2%;
-    float: left;
-}
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+/* CSS relativo al footer */
 
 footer {
     text-align: center;
